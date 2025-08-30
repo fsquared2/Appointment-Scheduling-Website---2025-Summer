@@ -1,0 +1,74 @@
+/* Page basics */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+  color: #111;
+}
+
+/* Centered container card */
+.container {
+  max-width: 640px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Heading */
+h1 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Form spacing */
+form p { margin: 14px 0; }
+
+/* Inputs & selects */
+input, textarea, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfd6e0;
+  border-radius: 6px;
+  background: #fafbfd;
+  font-size: 15px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+textarea { min-height: 120px; resize: vertical; }
+
+/* Action buttons */
+button {
+  background: #10b981;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover { background: #059669; }
+
+a {
+  margin-left: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover { text-decoration: underline; }
+
+/* Error messages */
+ul {
+  margin: 0 0 14px 18px;
+  color: #b91c1c;
+  font-size: 14px;
+}

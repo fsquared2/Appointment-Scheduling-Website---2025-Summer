@@ -1,0 +1,101 @@
+/* === Page basics === */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+  color: #111;
+  line-height: 1.45;
+}
+h1 { margin: 0 0 18px; }
+
+/* === Top bar (your <form>) === */
+form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+input[type="text"] {
+  flex: 1 1 320px;
+  padding: 8px 10px;
+  border: 1px solid #cfd6e0;
+  border-radius: 6px;
+  background: #fafbfd;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,.18);
+}
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover { background: #1e40af; }
+form a {
+  margin-left: 6px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+form a:hover { text-decoration: underline; }
+
+/* === Appointment cards === */
+.appointment {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.05);
+}
+/* slim left accent bar */
+.appointment::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  border-radius: 10px 0 0 10px;
+  background: linear-gradient(180deg, #2563eb, #4f46e5);
+}
+.appointment h3 { margin: 0 0 6px; font-size: 18px; }
+.appointment p  { margin: 4px 0;  color: #374151; }
+.appointment p strong { color: #111; }
+
+/* === Action links (small buttons) === */
+.appointment p:last-child a {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  background: #2563eb; /* one color for all */
+  color: #fff;
+}
+
+.appointment p:last-child a:hover {
+  background: #1e40af;
+}
+
+
+/* === Responsive === */
+@media (max-width: 640px) {
+  form { flex-wrap: wrap; }
+  button { width: 100%; }
+  form a { margin-left: 0; }
+}
